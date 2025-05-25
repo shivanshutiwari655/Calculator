@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shivanshu calculator</title>
+    <link rel="stylesheet" href="claculator.css">
+</head>
+<body>
+
+  </header>
+    <div class="calculator">
+        <input type="text" class="display" id="display" disabled>
+        <div class="buttons">
+          <button class="clear" onclick="clearDisplay();playClickSound()">C</button>
+          <button class="num" onclick="appendToDisplay('(');playClickSound()">(</button>
+          <button class="num" onclick="appendToDisplay(')');playClickSound()">)</button>
+          <button class="op" onclick="appendToDisplay('/');playClickSound()">/</button>
+    
+          <button class="num" onclick="appendToDisplay('7');playClickSound()">7</button>
+          <button class="num" onclick="appendToDisplay('8');playClickSound()">8</button>
+          <button class="num" onclick="appendToDisplay('9');playClickSound()">9</button>
+          <button class="op" onclick="appendToDisplay('*');playClickSound()">×</button>
+    
+          <button class="num" onclick="appendToDisplay('4');playClickSound()">4</button>
+          <button class="num" onclick="appendToDisplay('5');playClickSound()">5</button>
+          <button class="num" onclick="appendToDisplay('6');playClickSound()">6</button>
+          <button class="op" onclick="appendToDisplay('-');playClickSound()">−</button>
+    
+          <button class="num" onclick="appendToDisplay('1');playClickSound()">1</button>
+          <button class="num" onclick="appendToDisplay('2');playClickSound()">2</button>
+          <button class="num" onclick="appendToDisplay('3');playClickSound()">3</button>
+          <button class="op" onclick="appendToDisplay('+');playClickSound()">+</button>
+         
+          <button class="num" onclick="appendToDisplay('0');playClickSound()">0</button>
+          <button class="num" onclick="appendToDisplay('.');playClickSound()">.</button>
+          <button class="equal" onclick="calculateResult();playClickSound()">=</button>
+          
+          <button class="num" onclick="appendToDisplay('%');playClickSound()">Rem.</button>
+          <button class="num" onclick="appendToDisplay('**2');playClickSound()">squ</button>
+          <button class="num" onclick="appendToDisplay('**3');playClickSound()">qub</button>
+          <button class="pop" id="doller" onclick="appendToDisplay('/84.10');playClickSound()">doller</button>
+        </div>
+      </div>
+    
+      
+    <audio id="clickSound" src="click.mp3" preload="auto"></audio>
+
+    <script src="calculator.js"></script>
+    
+    
+</body>
+</html>
